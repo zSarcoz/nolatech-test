@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: white;
+  --foreground: black;
+}
+
+* {
+  transition: all 0.3 ease-in-out;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 1.3vh;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c2c2c2;
+  border-radius: 20px;
+  border: 2px solid #f1f2f3;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: #434343;
+}
+
+::-webkit-scrollbar-button {
+  border-radius: 10px;
+}
+
+@layer base {
+  input[type='number']::-webkit-outer-spin-button,
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number'] {
+    -webkit-appearance: none;
+    margin: 0;
+    -moz-appearance: textfield !important;
+  }
+}
+
+.balance {
+  max-inline-size: 50ch;
+  text-wrap: balance;
+}
+
+.mask-image{
+  mask-image: linear-gradient(white 90%, transparent);
+}
+
+.scroll-area::before,
+.scroll-area::after {
+  content: '';
+  position: absolute;
+  height: 100%; /* Adjust the shadow height as needed */
+  width: 30px;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.scroll-area::before {
+  top: 0;
+  right: 0;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+}
+
+.scroll-area::after {
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+}
+
+.footer-bg {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    79deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(10, 10, 10, 1) 13%,
+    rgba(158, 32, 25, 1) 100%
+  );
+  z-index: 100;
+  position: relative;
+}
