@@ -8,7 +8,6 @@ import Image from "next/image"
 import { useRouter } from "next/navigation"
 import { Button } from "@mui/material"
 import Navbar from "./_components/Navbar/Navbar"
-import CustomButton from "./_components/Button/Button"
 
 export default function Home() {
   const router = useRouter()

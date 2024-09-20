@@ -1,4 +1,3 @@
-// "use client"
 
 import * as React from "react"
 
@@ -6,7 +5,6 @@ import Link from "next/link"
 
 import {
   CssBaseline,
-  InputBase,
   Toolbar,
   List,
   Drawer,
@@ -22,7 +20,6 @@ import {
 } from "@mui/material"
 
 import {
-  Search as SearchIcon,
   Notifications,
   AccountCircle,
   Logout

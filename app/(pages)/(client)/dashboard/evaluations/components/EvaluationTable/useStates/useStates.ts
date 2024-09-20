@@ -89,7 +89,7 @@ export default function useStates() {
     setIsEvaluationModalOpen(false)
   }
 
-  const handleSubmitEvaluation = (evaluationData: any) => {
+  const handleSubmitEvaluation = (evaluationData) => {
     console.log("Evaluation Data:", evaluationData)
     // Aquí puedes manejar el envío de los datos de evaluación
   }

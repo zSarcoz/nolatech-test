@@ -3,7 +3,7 @@
 import useNolaStore from "@/app/(pages)/(store)/nolaStore"
 import { EvaluationStatus, Performance } from "@/app/assets/data/tables/enums/employsEvaluation.enum"
 import { Dayjs } from "dayjs"
-import React, { useState } from "react"
+import { useState } from "react"
 
 
 export default function useStates() {

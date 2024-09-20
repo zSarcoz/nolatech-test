@@ -29,7 +29,7 @@ import useStates from "./useStates/useStates"
 interface EvaluationModalProps {
   open: boolean
   onClose: () => void
-  onSubmit: (evaluationData: any) => void
+  onSubmit: (evaluationData) => void
   employeeEmail: string | null
   employName: string
   employeeId: number

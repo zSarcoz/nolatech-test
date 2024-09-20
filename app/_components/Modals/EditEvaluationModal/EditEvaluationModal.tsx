@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useEffect, useState } from "react"
+import React, { useEffect } from "react"
 import {
   Dialog,
   DialogActions,
@@ -27,7 +27,7 @@ import useStates from "./useStates/useStates"
 interface EvaluationModalProps {
   open: boolean
   onClose: () => void
-  evaluationSelected: any
+  evaluationSelected
 }
 
 const EditEvaluationModal: React.FC<EvaluationModalProps> = ({

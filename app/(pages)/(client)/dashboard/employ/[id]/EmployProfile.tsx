@@ -1,6 +1,3 @@
-
-import React from "react"
-
 import { Avatar, Skeleton } from "@mui/material"
 
 import FlagIcon from "@mui/icons-material/Flag"

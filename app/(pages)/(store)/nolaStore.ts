@@ -63,7 +63,7 @@ const useNolaStore = create<EvaluationStore>((set) => ({
     }),
   loadEmployees: (employees) => set(() => ({ employees })),
   
-  updateEmployeeEvaluation: (email, evaluation) =>
+  updateEmployeeEvaluation: (email) =>
     set((state) => ({
       employees: state.employees.map((emp) =>
         emp.email === email ? { ...emp, evaluation: EvaluationStatus.EVALUATED } : emp

@@ -1,6 +1,4 @@
 import React from "react"
-import { Search } from "@mui/icons-material"
-// import styles from "./styles/Navbar.module.css"
 import Image from "next/image"
 import { useRouter } from "next/navigation"
 import Link from "next/link"

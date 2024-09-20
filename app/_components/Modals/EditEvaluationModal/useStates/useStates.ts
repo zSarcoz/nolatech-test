@@ -1,6 +1,6 @@
 import { Performance } from "@/app/assets/data/tables/enums/employsEvaluation.enum"
-import dayjs, { Dayjs } from "dayjs"
-import React, { useEffect, useState } from "react"
+import { Dayjs } from "dayjs"
+import { useState } from "react"
 
 export default function useStates() {
   const [performance, setPerformance] = useState<Performance | "">("")

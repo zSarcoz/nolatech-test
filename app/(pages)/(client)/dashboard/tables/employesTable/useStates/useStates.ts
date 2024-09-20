@@ -106,7 +106,7 @@ export default function useStates() {
   const [selectedEmployeeName, setSelectedEmployeeName] = useState<string>("")
   const [selectedEmployeeId, setSelectedEmployeeId] = useState<number>(0)
   const [selectedEvaluationId, setSelectedEvaluationId] = useState<number>(0)
-  const [selectedEvaluation, setSelectedEvaluation] = useState<any>()
+  const [selectedEvaluation, setSelectedEvaluation] = useState()
 
   const employeeSelected = evaluations.filter(
     (test) => test.employeeId === selectedEmployeeId
