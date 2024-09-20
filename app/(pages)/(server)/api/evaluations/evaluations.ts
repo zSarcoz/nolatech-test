@@ -8,12 +8,12 @@ export const getEvaluations = async () => {
   return response.data;
 };
 
-export const createEvaluation = async (evaluation: any) => {
+export const createEvaluation = async (evaluation) => {
   const response = await axios.post(`${apiUrl}/evaluations`, evaluation);
   return response.data;
 };
 
-export const updateEvaluation = async (id: string, evaluation: any) => {
+export const updateEvaluation = async (id: string, evaluation) => {
   const response = await axios.put(`${apiUrl}/evaluations/${id}`, evaluation);
   return response.data;
 };
